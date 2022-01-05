@@ -1,0 +1,289 @@
+@media screen and (max-width: 980px) {
+  #menu {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #menu > li {
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  /* ACCUEIL RESPONSIVE */
+
+  #text_1,
+  #text_2,
+  #text_3 {
+    width: 100% !important;
+  }
+
+  #img_1,
+  #img_2,
+  #img_3 {
+    width: 100% !important;
+  }
+
+  #accueil_1,
+  #accueil_2,
+  #accueil_3 {
+    justify-content: center !important;
+    flex-direction: column;
+  }
+
+  #text_1:nth-of-type(1),
+  #text_3:nth-of-type(1) {
+    order: 2;
+  }
+
+  #img_1:nth-of-type(2),
+  #img_3:nth-of-type(2) {
+    order: 1;
+  }
+
+  #navMenu {
+    display: flex;
+    justify-content: center !important;
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  #div_produit {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #produit {
+    width: 80% !important;
+    margin-bottom: 8% !important;
+  }
+
+  main {
+    margin-bottom: 8% !important;
+  }
+}
+
+/* CORPS ET MENU */
+
+* {
+  font-family: "TW Cen MT";
+  -moz-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+}
+
+html {
+  height: 100%;
+  max-width: 100%;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: table;
+  width: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#logo_david_olivier {
+  width: 100%;
+}
+
+#menu-baselayout {
+  width: 100%;
+  background-color: black;
+}
+
+li {
+  list-style-type: none;
+  padding-top: 0.7%;
+}
+
+#menu-baselayout > nav > ul > li > a {
+  color: white;
+  transition: all 0.3s ease-in;
+  text-decoration: none;
+}
+
+#menu-baselayout > nav > ul > li > a:hover {
+  color: grey;
+  text-decoration: none;
+}
+
+main {
+  margin-bottom: 6%;
+}
+
+/* ACCUEIL */
+
+#text-accueil {
+  text-align: center;
+}
+
+#titre_accueil {
+  background-color: rgb(24, 23, 23);
+  color: white;
+}
+
+#text_1,
+#text_2,
+#text_3 {
+  width: 50%;
+}
+
+#img_1,
+#img_2,
+#img_3 {
+  width: 50%;
+}
+
+#img_1 > img,
+#img_2 > img,
+#img_3 > img {
+  width: 100%;
+}
+
+#text_2:nth-of-type(1) {
+  order: 2;
+}
+
+#img_2:nth-of-type() {
+  order: 1;
+}
+
+/* CONTACT HORAIRES */
+
+#num_tel {
+  text-decoration: none;
+  color: grey;
+  transition: all 0.3s ease-in;
+}
+
+#num_tel:hover {
+  color: black;
+}
+
+#map {
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+/* MARQUES */
+
+#produit {
+  width: 25%;
+  box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  margin: auto;
+  position: relative;
+  transition: all 0.3s ease-in;
+  transform: scale(1);
+  margin-bottom: 2%;
+}
+
+#produit:hover {
+  transform: scale(1.1);
+}
+
+#titre {
+  border-top: 3px solid #676869;
+  text-decoration: underline;
+}
+
+#div_produit img {
+  width: 100%;
+}
+
+/* PRESTATIONS ET FORFAITS */
+
+#prestation {
+  font-weight: bold;
+}
+
+#prestations_coiffure {
+  width: 33%;
+}
+
+#prestations_esthetique {
+  width: 50%;
+}
+
+#prestations_coiffure > h4,
+#prestations_esthetique > h4 {
+  padding-left: 7px;
+  background-color: rgb(24, 23, 23);
+  color: white;
+}
+
+#forfait {
+  border: 1px solid grey;
+}
+
+#titre_marque {
+  text-decoration: underline;
+}
+
+#prix::after {
+  content: " €";
+}
+#prestation_coiffure {
+  font-weight: bold;
+}
+
+#prestation_coiffure::after {
+  content: "*";
+}
+
+/* FOOTER */
+
+footer {
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: table-row;
+  width: 100%;
+}
+
+#social-media {
+  font-size: 150%;
+}
+
+i {
+  color: white;
+  transition: all 0.3s ease-in;
+}
+
+i:hover {
+  color: grey;
+}
+
+/* NAVIGATION TARIFS */
+
+#navMenu {
+  width: 100%;
+  display: flex;
+  transform: scale(1);
+}
+
+#navMenu > a {
+  color: grey;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+#navMenu a:hover {
+  color: black;
+  transform: scale(1.1);
+}
